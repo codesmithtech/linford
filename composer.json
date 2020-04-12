@@ -1,0 +1,13 @@
+{
+    "name": "codesmithtech/linford",
+    "description": "Provides a UI to aid in the generation of code typically used when developing APIs in a Laravel application",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "David Smith",
+            "email": "david@codesmith.tech"
+        }
+    ],
+    "require": {}
+}
