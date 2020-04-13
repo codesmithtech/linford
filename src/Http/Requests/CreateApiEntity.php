@@ -18,7 +18,7 @@ class CreateApiEntity extends FormRequest
             'properties' => 'required|array',
             'properties.*.name' => 'required|string',
             'properties.*.type' => 'required|string',
-            'properties.*.length' => 'sometimes|nullable|int',
+            'properties.*.length' => 'sometimes|nullable',
             'properties.*.nullable' => 'sometimes|nullable|boolean',
             'properties.*.defaultValue' => 'sometimes|nullable',
             'properties.*.validators' => 'array',

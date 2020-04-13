@@ -65,7 +65,7 @@ class MigrationGenerator extends CodeGenerator
                 break;
             case 'decimal':
                 $size = $config['length'] ?? '8, 2';
-                $stmt = "decimal('$fieldName', $size)";
+                $stmt .= "decimal('$fieldName', $size)";
                 break;
             case 'unsignedInteger':
             case 'signedInteger':
