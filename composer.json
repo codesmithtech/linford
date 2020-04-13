@@ -11,7 +11,7 @@
     ],
     "require": {
         "ext-json": "*",
-        "illuminate/console": "^6.*",
+        "illuminate/console": "^6.0",
         "codesmithtech/laravel-genesis": "dev-master"
     },
     "autoload": {
