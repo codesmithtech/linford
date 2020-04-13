@@ -57,11 +57,15 @@ class MigrationGenerator extends CodeGenerator
         
         switch ($config['type']) {
             case 'string':
-                $size = $config['size'] ?? 255;
+                $size = $config['length'] ?? 255;
                 $stmt .= "string('$fieldName', $size)";
                 break;
             case 'array':
                 $stmt .= "json('$fieldName')";
+                break;
+            case 'decimal':
+                $size = $config['length'] ?? '8, 2';
+                $stmt = "decimal('$fieldName', $size)";
                 break;
             case 'unsignedInteger':
             case 'signedInteger':

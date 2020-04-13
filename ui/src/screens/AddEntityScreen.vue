@@ -284,6 +284,7 @@
                     { value: 'json', label: 'JSON' },
                     { value: 'boolean', label: 'Boolean' },
                     { value: 'text', label: 'Text' },
+                    { value: 'decimal', label: 'Decimal' },
                 ],
                 relationshipTypes: [
                     { value: 'BelongsTo', label: 'BelongsTo' },
