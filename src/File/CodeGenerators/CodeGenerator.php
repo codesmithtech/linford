@@ -88,6 +88,10 @@ abstract class CodeGenerator
             $propType = 'array';
         }
         
+        if ($propType === 'decimal') {
+            $propType = 'float';
+        }
+        
         $this->props[] = " * @property $propType \$$propName";
     }
     
