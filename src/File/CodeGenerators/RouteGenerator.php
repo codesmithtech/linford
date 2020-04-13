@@ -27,5 +27,7 @@ class RouteGenerator extends CodeGenerator
         $contents .= $this->file;
         
         file_put_contents($routesFile, $contents);
+        
+        return $routesFile;
     }
 }
