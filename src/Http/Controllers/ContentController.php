@@ -7,6 +7,6 @@ class ContentController extends Controller
 {
     public function index()
     {
-        return view('linford::app');
+        return redirect()->to('/vendor/linford');
     }
 }
